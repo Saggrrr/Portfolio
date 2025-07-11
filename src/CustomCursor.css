@@ -1,0 +1,20 @@
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(173, 216, 230, 0.2); /* soft bluish */
+  box-shadow:
+    0 0 6px rgba(173, 216, 230, 0.6),
+    inset 2px 2px 5px rgba(255, 255, 255, 0.8),
+    inset -2px -2px 5px rgba(0, 0, 0, 0.1);
+  pointer-events: none;
+  mix-blend-mode: difference; /* 👈 key line */
+  backdrop-filter: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease;
+  z-index: 9999;
+
+}
