@@ -14,7 +14,7 @@ const certifications = [
 
   {
     title: "Machine Learning",
-    issuer: "Stanford Online, DeepLearning.AI, Coursera",
+    issuer: "Stanford, DeepLearning.AI, Coursera",
     link: smlCert,
     image: smlImg
   },
