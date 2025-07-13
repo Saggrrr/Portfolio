@@ -17,6 +17,7 @@ height: auto;
 
 .navbar {
   position: fixed;
+  flex-wrap: wrap;  
   top: 0;
   right: 0;
   width: 100%;
@@ -28,26 +29,48 @@ height: auto;
   gap: 20px;
   box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
 
+  
   background: transparent;
   box-shadow: none;
 
 }
 
-/* Style links like buttons */
 .navbar a {
-  background-color: transparent;
-  border: 2px solid #254464;
-  color: #7488ba;
+  text-decoration: none;
+  color:#00a6c7;
+  padding: 10px 20px;
+  margin: 0 10px;
   border-radius: 6px;
-  padding: 6px 12px;
+  transition: all 0.3s ease;
+  position: relative;
+
+    font-family: 'Fira Code', monospace;
+
 }
 
-/* Hover effect */
 .navbar a:hover {
-  background-color: #161c22;
-  color: white;
+  background-color: rgba(255, 255, 255, 0.1); /* subtle glow */
+  color: #00f7ff;
+  transform: scale(1.05);
 }
 
+/* Optional underline effect on hover */
+.navbar a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 100%;
+  background: #00f7ff;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.navbar a:hover::after {
+  transform: scaleX(1);
+}
 
 /* Scrollable section */
 .page {
@@ -173,6 +196,7 @@ ul li::before {
   margin-bottom: 20px;
   object-fit: cover;
   align-self: center;
+
 }
 
 
