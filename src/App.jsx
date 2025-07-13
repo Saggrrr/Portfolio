@@ -38,7 +38,7 @@ function App() {
           </div>
 <div className="right">
   <div className="bio-card">
-    <h2 style={{ color: 'rgba(79, 123, 199, 0.8)' }}>About Me</h2>
+    <h2 style={{ color: ' #05ced5ff' }}>About Me</h2>
     <p>
       I'm a Computer Science student with a strong passion for building clean, responsive, and user-friendly web interfaces.
       I enjoy working at the intersection of logic and creativity — turning ideas into well-crafted, accessible digital experiences that are both beautiful and functional.
