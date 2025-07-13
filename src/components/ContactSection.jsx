@@ -5,7 +5,7 @@ import "./Contact.css";
 
 const ContactSection = () => {
   return (
-    <section className="contact-section" id="contact">
+    <section className="contact-section" id="contacts">
       <div className="contact-list">
         <ContactCard
           icon={<FiMail size={80} />}
