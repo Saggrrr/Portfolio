@@ -6,6 +6,13 @@ import SkillsSection from "./components/SkillSection";
 
 import ProjectSection from "./components/ProjectSection";
 
+import ContactSection from "./components/ContactSection";
+
+
+
+import { FiMail } from "react-icons/fi";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+
 
 
 function App() {
@@ -18,6 +25,7 @@ function App() {
         <a href="#home">Home</a>
         <a href="#skills-section">Tech Skills</a>
         <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
         <a href="#Soft-skills">Soft Skills</a>
         <a href="#contact">Contact</a>
       </div>
@@ -75,6 +83,39 @@ function App() {
   </div>
 </section>
 
+{/* Projects Section */}
+<section className="page" id="education">
+  <div className="split">
+    <div className="left">
+      <h1 style={{ textAlign: 'center' }}>Education</h1>
+    </div>
+    <div className="right">
+      <div className="education-section">
+  <h2 className="education-title">Education</h2>
+
+  <div className="education-card">
+    <div className="education-degree">🎓 Computer Science and Engineering</div>
+    <div className="education-location">📍 Amrita Vishwa Vidyapeetham, Coimbatore, TamilNadu</div>
+    <div className="education-year">📅 2023 - 2027</div>
+  </div>
+
+  <div className="education-card">
+    <div className="education-degree">🎓 Higher Secondary Education</div>
+    <div className="education-location">📍 PVS HSS, Eranhikkal, Calicut, Kerala</div>
+    <div className="education-year">📅 2020 - 2022</div>
+  </div>
+
+  <div className="education-card">
+    <div className="education-degree">🎓 Secondary Education (Class 10)</div>
+    <div className="education-location">📍 MSS, Mavilikkadavu, Calicut, Kerala</div>
+    <div className="education-year">📅 2019 - 2020</div>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</section>
 
 {/* Soft Skills */}
 <section className="page" id="Soft-skills">
@@ -104,9 +145,12 @@ function App() {
             <h1 style={{textAlign: 'center'}}>Contact</h1>
           </div>
           <div className="right">
-            <p style={{fontSize: '34px'}}>Email: ananthasagar13@gmail.com</p>
-            <p style={{fontSize: '34px'}}>GitHub: github.com/saggrrr</p>
-            <p style={{fontSize: '34px'}}>LinkedIn: linkedin.com/in/AnanthaSagarN</p>
+
+            <ContactSection />
+
+
+
+
           </div>
         </div>
       </section>
