@@ -8,10 +8,8 @@ import ProjectSection from "./components/ProjectSection";
 
 import ContactSection from "./components/ContactSection";
 
+import CertificationSection from "./components/CertificationSection";
 
-
-import { FiMail } from "react-icons/fi";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 
 
@@ -26,6 +24,7 @@ function App() {
         <a href="#skills-section">Tech Skills</a>
         <a href="#projects">Projects</a>
         <a href="#education">Education</a>
+        <a href="#certifications">Certifications</a>  
         <a href="#Soft-skills">Soft Skills</a>
         <a href="#contact">Contact</a>
       </div>
@@ -83,7 +82,7 @@ function App() {
   </div>
 </section>
 
-{/* Projects Section */}
+{/* Education Section */}
 <section className="page" id="education">
   <div className="split">
     <div className="left">
@@ -116,6 +115,22 @@ function App() {
     </div>
   </div>
 </section>
+
+
+
+{/* Certifications Section */}
+<section className="page" id="certifications">
+  <div className="split">
+    <div className="left">
+      <h1 style={{ textAlign: 'center' }}>Certifications</h1>
+    </div>
+    <div className="right">
+    <CertificationSection />
+    </div>
+  </div>
+</section>
+
+
 
 {/* Soft Skills */}
 <section className="page" id="Soft-skills">
