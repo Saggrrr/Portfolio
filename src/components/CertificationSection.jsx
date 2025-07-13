@@ -6,23 +6,29 @@ import awsCert from "../assets/certs/cert_AWS.pdf";
 import iicCert from "../assets/certs/cert_IIC.pdf";
 import smlCert from "../assets/certs/cert_SML.pdf";
 
+import awsImg from "../assets/certs/img/aws.png";
+import iicImg from "../assets/certs/img/iic.png";
+import smlImg from "../assets/certs/img/sml.png";
 
 const certifications = [
 
   {
     title: "Machine Learning",
-    issuer: "DeepLearning.AI, Coursera",
+    issuer: "Stanford Online, DeepLearning.AI, Coursera",
     link: smlCert,
+    image: smlImg
   },
   {
     title: "IIC Innovation Program",
     issuer: "AVV Coimbatore, Ministry of Education",
     link: iicCert,
+    image: iicImg
   },
   {
     title: "AWS Cloud Engineer",
-    issuer: "Amazon Web Services",
+    issuer: "AVV CIR, Amazon Web Services",
     link: awsCert,
+    image: awsImg
   }
 ];
 
