@@ -37,8 +37,8 @@ function App() {
             <p style={{textAlign: "center"}}>Computer Science Student</p>
           </div>
 <div className="right">
-  <div className="bio-card">
-    <h2 style={{ color: ' #05ced5ff' }}>About Me</h2>
+  <div style={{textAlign:"center"}} className="bio-card">
+    <h2 style={{ color: ' #05ced5ff'}}>About Me</h2>
     <p>
       I'm a Computer Science student with a strong passion for building clean, responsive, and user-friendly web interfaces.
       I enjoy working at the intersection of logic and creativity — turning ideas into well-crafted, accessible digital experiences that are both beautiful and functional.
