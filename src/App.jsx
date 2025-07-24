@@ -33,7 +33,7 @@ function App() {
         <div className="split">
           <div className="left">
             <img src={profilePic} id="profile-pic" alt="Profile" style={{marginTop: '50px'}}/>
-            <h1 style={{textAlign: "center"}}>AnanthaSagar</h1>
+            <h1 style={{textAlign: "center", fontSize:40}}>AnanthaSagar</h1>
             <p style={{textAlign: "center"}}>Computer Science Student</p>
           </div>
 <div className="right">
@@ -122,7 +122,7 @@ function App() {
 <section className="page" id="certifications">
   <div className="split">
     <div className="left">
-      <h1 style={{ textAlign: 'center' }}>Certifications</h1>
+      <h1 style={{ textAlign: 'center',fontSize:40 }}>Certifications</h1>
     </div>
     <div className="right">
     <CertificationSection />
