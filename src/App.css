@@ -14,38 +14,45 @@ height: auto;
   cursor: none; /* 🔥 hide default cursor */
 }
 
-
 .navbar {
-  position: fixed;
-  flex-wrap: wrap;  
+  position:fixed;
   top: 0;
   right: 0;
   width: 100%;
-  background-color: white;
-  z-index: 1000;
-  padding: 15px 30px;
-  display: flex;
-  justify-content: flex-end; /* 🔹 aligns items to the right */
-  gap: 20px;
-  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
-
-  
   background: transparent;
   box-shadow: none;
+  z-index: 1000;
+  padding: 15px 30px;
 
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping */
+  overflow-x: auto; /* Enable horizontal scroll */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  gap: 20px;
+
+  scrollbar-width: none; /* Hide scrollbar on Firefox */
+}
+
+.navbar::-webkit-scrollbar {
+  display: none; /* Hide scrollbar on Chrome/Safari */
 }
 
 .navbar a {
+  flex-shrink: 0; /* Prevent links from shrinking */
   text-decoration: none;
-  color:#00a6c7;
+  color: #00a6c7;
   padding: 10px 20px;
   margin: 0 10px;
   border-radius: 6px;
   transition: all 0.3s ease;
   position: relative;
-
-    font-family: 'Fira Code', monospace;
-
+  font-family: 'Fira Code', monospace;
+  white-space: nowrap; /* Prevent text wrap inside buttons */
+}
+@media (min-width: 769px) {
+  .navbar {
+    justify-content: flex-end; /* Align navbar items to the right */
+  }
 }
 
 .navbar a:hover {
@@ -71,6 +78,8 @@ height: auto;
 .navbar a:hover::after {
   transform: scaleX(1);
 }
+
+
 
 /* Scrollable section */
 .page {
