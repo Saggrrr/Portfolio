@@ -96,18 +96,21 @@ function App() {
     <div className="education-degree">🎓 Computer Science and Engineering</div>
     <div className="education-location">📍 Amrita Vishwa Vidyapeetham, Coimbatore, TamilNadu</div>
     <div className="education-year">📅 2023 - 2027</div>
+    <div className="education-grade">CGPA: 8.09</div>
   </div>
 
   <div className="education-card">
     <div className="education-degree">🎓 Higher Secondary Education</div>
     <div className="education-location">📍 PVS HSS, Eranhikkal, Calicut, Kerala</div>
     <div className="education-year">📅 2020 - 2022</div>
+    <div className="education-grade">📊 Percentage: 94%</div>
   </div>
 
   <div className="education-card">
     <div className="education-degree">🎓 Secondary Education (Class 10)</div>
     <div className="education-location">📍 MSS, Mavilikkadavu, Calicut, Kerala</div>
     <div className="education-year">📅 2019 - 2020</div>
+    <div className="education-grade">📊 Percentage: 92%</div>
   </div>
 </div>
 
